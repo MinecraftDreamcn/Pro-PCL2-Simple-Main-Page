@@ -136,15 +136,12 @@
                </Grid.ColumnDefinitions>
                <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="关于作者" EventType="弹出窗口" 
                     EventData="关于作者|我是MFn233，一个妄图写出完美代码的程序员，该主页目前由我独立完成，并在GitHub上开源。欢迎你前往仓库为我的项目提issue\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: mfn233.github.io\n我是Dream,一个萌新程序员，仅有10岁！\n鸣谢：\nMCSteve123(GitHub)提供增加Minecraft相关网页捷径的建议\nJingHai-Lingyun(GitHub)提供修复建议与改进建议\nSIPC(sipc.ink)帮助将主页文件挂载于云服务器\n\n©MFn233 2023/7/22"/>
-               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="项目仓库" EventType="打开网页" EventData="https://github.com/MFn233/PCL-Mainpage"/>
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="项目仓库" EventType="打开网页" EventData="https://github.com/MinecraftDreamcn/Pro-PCL2-Simple-Main-Page"/>
           </Grid>
           <Grid>
                <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
-               </Grid.ColumnDefinitions>
-               <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="更新日志" EventType="打开网页" 
-                    EventData="https://github.com/MFn233/PCL-Mainpage/releases/latest" ToolTip="将前往GitHub查看最新版本更新日志"/>
           </Grid>
      </StackPanel>
 </local:MyCard>
