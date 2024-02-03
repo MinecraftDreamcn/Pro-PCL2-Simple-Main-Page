@@ -1,4 +1,4 @@
-﻿<!--
+<!--
  ____                            ___                                                                                 
 /\  _`\   __                    /\_ \               /'\_/`\            __                                            
 \ \,\L\_\/\_\    ___ ___   _____\//\ \      __     /\      \     __   /\_\    ___   _____      __       __      __   
@@ -14,8 +14,8 @@
 <local:MyCard Margin="0,0,0,12" Title="欢迎页" CanSwap="True" IsSwaped="False">
      <StackPanel Margin="24,40,24,15">
           <TextBlock HorizontalAlignment="Center" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush2}" FontSize="20"
-               Text="欢迎使用Simple Mainpage!" />
-          <local:MyHint Text="主页作者: MFn233" Margin="0,0,0,0" Padding="0,2,0,2" IsWarn="False" />
+               Text="欢迎使用Profesnall Simple Mainpage!" />
+          <local:MyHint Text="主页作者: MFn233,Profesnall制作：MinecraftDreamcn" Margin="0,0,0,0" Padding="0,2,0,2" IsWarn="False" />
           <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" Grid.Column="0"/>
           <!--因为“你知道吗”在启动游戏的时候会出现，所以我只在这里设置了回声洞-->
           <TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush1}" Text="{cave}" />
@@ -46,7 +46,6 @@
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://cn.bing.com/favicon.ico" Title="Bing" Info="有求必应" EventType="打开网页" EventData="https://cn.bing.com/" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://www.bilibili.com/favicon.ico" Title="Bilibili" Info="哔哩哔哩 (゜-゜)つロ 干杯~" EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="GitHub" Info="Let's build from here" EventType="打开网页" EventData="https://github.com/" Type="Clickable" />
-                    <local:MyListItem Margin="-2,0,0,0" Logo="https://static.zhihu.com/heifetz/favicon.ico" Title="知乎" Info="有问题，就会有答案" EventType="打开网页" EventData="https://www.zhihu.com/" Type="Clickable" />
                </StackPanel>
           </local:MyCard>
           <local:MyCard Margin="0,0,0,12" Title="Minecraft相关" CanSwap="True" IsSwaped="False">
@@ -116,16 +115,15 @@
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
                <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="今日人品" EventType="今日人品"/>
-               <!--
-                    <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="二次元图" EventType="打开网页" EventData=""/> 
-                    龙猫为了让我删掉这个功能甚至发了个issue，因为它会刷r18图
-                    虽然我没刷出来过，不过还是删掉为好吧
-                    或许我会找其他正常点的api替代，也或许以后都不会再有了
-                    api: https://www.loliapi.com/
-               -->
                <local:MyButton Grid.Column="1" Margin="0,0,0,0" Text="启动Minecraft基岩版" EventType="打开网页" EventData="minecraft://" ToolTip="如果你的电脑上安装了Minecraft基岩版，按下这个按钮将会启动它。" />
                <!-- 别不信，真有效 -->
-          </Grid>
+
+         </Grid>
+                    <local:MyButton Grid.Column="1" Margin="0,10,10,0" Height="35" Text="二次元图" EventType="打开网页" EventData="https://www.loliapi.com/"/>                    
+<!--龙猫为了让我删掉这个功能甚至发了个issue，因为它会刷r18图
+                    虽然我没刷出来过，不过还是删掉为好吧
+                    或许我会找其他正常点的api替代，也或许以后都不会再有了
+                    api: https://www.loliapi.com/                -->
           <local:MyListItem Margin="-2,12,0,0" Logo="https://zh.minecraft.wiki/favicon.ico" Title="【重要！】中文MC Wiki迁移通知" Info="中文MinecraftWiki现已迁移至zh.minecraft.wiki,请不要再访问旧的网站!" EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki:%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5" Type="Clickable" />
      </StackPanel>
 </local:MyCard>
@@ -137,7 +135,7 @@
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
                <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="关于作者" EventType="弹出窗口" 
-                    EventData="关于作者|我是MFn233，一个妄图写出完美代码的程序员，该主页目前由我独立完成，并在GitHub上开源。欢迎你前往仓库为我的项目提issue\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: mfn233.github.io\n\n鸣谢：\nMCSteve123(GitHub)提供增加Minecraft相关网页捷径的建议\nJingHai-Lingyun(GitHub)提供修复建议与改进建议\nSIPC(sipc.ink)帮助将主页文件挂载于云服务器\n\n©MFn233 2023/7/22"/>
+                    EventData="关于作者|我是MFn233，一个妄图写出完美代码的程序员，该主页目前由我独立完成，并在GitHub上开源。欢迎你前往仓库为我的项目提issue\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: mfn233.github.io\n我是Dream,一个萌新程序员，仅有10岁！\n鸣谢：\nMCSteve123(GitHub)提供增加Minecraft相关网页捷径的建议\nJingHai-Lingyun(GitHub)提供修复建议与改进建议\nSIPC(sipc.ink)帮助将主页文件挂载于云服务器\n\n©MFn233 2023/7/22"/>
                <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="项目仓库" EventType="打开网页" EventData="https://github.com/MFn233/PCL-Mainpage"/>
           </Grid>
           <Grid>
